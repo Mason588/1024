@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    請選擇您的性別:
+    <form method = "post" action="">
+        <input type="radio" name="gender" value="男"  /> 男生
+        <input type="radio" name="gender" value="女" /> 女生 
+    </form>
+    
+    <!-- 以前name要不一樣 -->
+    <form method="post" action="">
+        <input type="checkbox" name="sport" value="運動" checked />運動 <br>
+        <input type="checkbox" name="movie" value="看電影" />看電影<br>
+        <input type="checkbox" name="internet" value="上網" />上網 <br>
+        <input type="checkbox" name="sing" value="唱歌" />唱歌 <br>
+    </form>
+
+    <form method="post" action="aaa.html">
+        帳號:<input type="text" name="user_Name"/>
+   <br>
+   <br>
+         密碼:<input type ="password"  name="password"/>  
+             <br>
+             <br/>
+                 <input type ="button" value="回上頁"  onclick="javascript:history.back();" / >
+     </form>
+
+     <br>
+     <br/>
+     <!-- 分組標記 -->
+     <fieldset>
+         <legend>分組標題</legend>
+         分組內容
+     </fildset>
+     </body>
+</body>
+
+
+
+</html>
