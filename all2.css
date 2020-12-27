@@ -1,0 +1,18 @@
+h1{
+    color: Red; 
+    font-family: "Broadway BT" ;
+    font-weight: bold;
+    border:1px
+    #336699 solid;
+}
+
+h2{
+      color:#0000cc;
+      font-family: "ParkAvenue BT";
+      font-weight:bold;
+      border:3px #669900 DOUBLE;
+}
+
+.txt{
+    font-size:24px ;color:aqua;
+}
