@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-attachment</title>    
+</head>
+<style type="text/css">
+td{
+    /* 網頁背景圖 */
+    background-image:url(夏目.jpg);  
+    /* 背景尺寸 */
+    /* background-size:cover; */
+    background-size:contain;
+    /* 背景圖重複水平方向 */
+    background-repeat: no-repeat;
+    /* 讓文字靠下對齊 */
+    vertical-align: bottom;
+    /* 讓文字水平置中 */
+    text-align:center
+    }
+</style>
+<body>
+    <table border="2" align="center">
+     <tr>
+         <td width="100" height="100" style="background-position:lefttop;">left top</td>
+         <td width="100" height="100" style="background-position:centertop;">center top</td>
+         <td width="100" height="100" style="background-position:righttop;">right top</td>
+     </tr>
+
+     <tr>
+        <td width="100" height="100" style="background-position:centerleft;">center left</td>
+        <td width="100" height="100" style="background-position:centercenter;">center center</td>
+        <td width="100" height="100" style="background-position:rightcenter;">right center</td>
+    </tr>
+
+    <tr>
+        <td width="100" height="100" style="background-position:leftbottom;">left bottom</td>
+        <td width="100" height="100" style="background-position:centerbottom;">center bottom</td>
+        <td width="100" height="100" style="background-position:rightbottom;">right bottom</td>
+    </tr>
+
+    </table>
+    
+    
+</body>
+</html>
