@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+span{
+    position:absolute;
+    width:200px;
+    height:150px;
+    border:1px  solid #330000;
+}
+</style>
+<body>
+    <table border=1 align="center">
+<tr>
+   <td>
+       <!-- 不管overflow，還是會完全顯示 -->
+       <span style="left:10px ;top:10px ;overflow:visible;">
+      落日鎔金，暮雲合璧，<br>
+      人在何處?<br>
+      染柳煙濃，吹梅笛怨，<br>
+      春意知幾許?<br>
+      元宵佳節，融和天氣，<br>
+      次第豈無風雨?<br>
+      來相召，香車寶馬，<br>
+      謝他酒朋詩侶。<br>
+      中州盛日，閨們多暇，<br>
+      記得偏重三五。<br>
+      鋪翠冠兒，然金雪柳，<br>
+      簇帶爭濟楚。<br>
+      如今憔悴，風鬟霧鬢，<br>
+      怕見夜間出去。<br>
+      不如向簾兒底下，<br>
+      聽人笑語。
+    </span>
+   </td> 
+
+   <td>
+    <!-- overflow，超出框框會隱藏 -->
+    <span style="left:220px ;top:10px ;overflow:hidden;">
+   落日鎔金，暮雲合璧，<br>
+   人在何處?<br>
+   染柳煙濃，吹梅笛怨，<br>
+   春意知幾許?<br>
+   元宵佳節，融和天氣，<br>
+   次第豈無風雨?<br>
+   來相召，香車寶馬，<br>
+   謝他酒朋詩侶。<br>
+   中州盛日，閨們多暇，<br>
+   記得偏重三五。<br>
+   鋪翠冠兒，然金雪柳，<br>
+   簇帶爭濟楚。<br>
+   如今憔悴，風鬟霧鬢，<br>
+   怕見夜間出去。<br>
+   不如向簾兒底下，<br>
+   聽人笑語。
+ </span>
+</td> 
+
+
+<td>
+    <!-- overflow，有卷軸可以拉 -->
+ <span style="left:440px ;top:10px;overflow:scroll;">
+   落日鎔金，暮雲合璧，<br>
+   人在何處?<br>
+   染柳煙濃，吹梅笛怨，<br>
+   春意知幾許?<br>
+   元宵佳節，融和天氣，<br>
+   次第豈無風雨?<br>
+   來相召，香車寶馬，<br>
+   謝他酒朋詩侶。<br>
+   中州盛日，閨們多暇，<br>
+   記得偏重三五。<br>
+   鋪翠冠兒，然金雪柳，<br>
+   簇帶爭濟楚。<br>
+   如今憔悴，風鬟霧鬢，<br>
+   怕見夜間出去。<br>
+   不如向簾兒底下，<br>
+   聽人笑語。
+ </span>
+</td> 
+
+<td>
+    <!-- overflow， 依狀況自行決定要不要有卷軸-->
+    <span style="left:660px ;top:10px ;overflow:auto;">
+   落日鎔金，暮雲合璧，<br>
+   人在何處?<br>
+   染柳煙濃，吹梅笛怨，<br>
+   春意知幾許?<br>
+   元宵佳節，融和天氣，<br>
+   次第豈無風雨?<br>
+   來相召，香車寶馬，<br>
+   謝他酒朋詩侶。<br>
+   中州盛日，閨們多暇，<br>
+   記得偏重三五。<br>
+   鋪翠冠兒，然金雪柳，<br>
+   簇帶爭濟楚。<br>
+   如今憔悴，風鬟霧鬢，<br>
+   怕見夜間出去。<br>
+   不如向簾兒底下，<br>
+   聽人笑語。
+ </span>
+</td> 
+
+</tr>
+
+    </table>
+    
+</body>
+</html>
