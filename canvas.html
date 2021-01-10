@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+canvas{border:1px solid black;}
+</style>
+<body onload="draw();">
+    <canvas id="myCanvas" ></canvas>
+</body>
+
+<script type="text/javascript">
+function draw()
+{
+    var canvas=document.getElementById('myCanvas');
+    //當getContext存在時   ，會執行這裡的敘述
+    if(canvas.getContext)
+    {
+        //宣告一個2D context物件並指定給變數ctx
+      var ctx=canvas.getContext('2d');
+      //指定顏色   
+      ctx.fileStyle="#FF0000";
+      //指定座標
+      ctx.fileRect(0,0,150,75);
+      
+      ctx.fileStyle="rgba(0,0,200,0.5)";
+      ctx.fileRect= (50,30,150,75);
+    }
+}
+</script>
+
+
+</html>

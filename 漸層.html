@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+function draw(){
+    var canvas=document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d'); 
+// 建立漸層
+var lingrad=ctx.createLinearGradient(0,0,150,150);
+//設定漸層顏色
+lingrad.addColorStop(0,"#FF0000");
+lingrad.addColorStop(0.5,"#00FF00");
+lingrad.addColorStop(1,"#0000FF");
+// 分配漸層給填充和邊線樣式
+ctx.fillStyle=lingrad;
+ctx.fillRect(10,10,130,130);
+}
+</script>
+<style>
+    canvas{border:1px solid black;}
+    /* 將框線設為1px */
+</style>
+<body>
+    <input type="button" value="漸層" onclick="draw();">
+    <canvas id="myCanvas" width="150" height="150"></canvas>
+</body>
+</html>

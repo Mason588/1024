@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    canvas{border:1px solid black;}
+    /* 將框線設為1px */
+</style>
+<script type="text/javascript">
+function drawline()
+{
+    var canvas =document.getElementById('myCanvas');
+    var ctx=canvas.getContext('2d');
+    // 開始繪圖
+    // 設定邊框顏色
+    ctx.strokeStyle="#ff0066";
+    // 路徑開始
+    ctx.beginPath(); 
+    // 將起點移到(50,50)
+    ctx.moveTo(50,50);
+    // 線條終點 (150,50))
+    ctx.lineTo(150,50);
+    ctx.lineTo(200,100);
+    ctx.lineTo(350,100);
+    // 繪出邊框
+    ctx.stroke(); 
+}
+</script>
+
+
+<body>
+    
+    <input type="button" value="畫線" onclick="drawline();"><br/>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+</body>
+</html>

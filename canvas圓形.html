@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+      function drawCircle(){
+      var canvas= document.getElementById('myCanvas');
+      var ctx=canvas.getContext('2d');
+      //開始繪圖****圓
+      ctx.strokeStyle="#336600" ;
+      //設定線條寬度   
+      ctx.lineWidth=10;
+      //設定填滿顏色   
+      ctx.fileStyle="#FF0000";
+      //(起始點100,100)半徑為50的圓   
+      ctx.arc(100,100,50,0,Math.PI*2,true);   
+      //關閉路徑   
+      ctx.closePath();
+      //繪出填滿圖形
+      ctx.fill();
+      //繪出邊框   
+      ctx.stroke();
+      }
+</script>
+<body>
+     <input type="button" value="畫圓" onclick="drawCircle();"><br/>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+</body>
+</html>

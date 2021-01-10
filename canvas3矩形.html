@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+function drawline(){
+var canvas=document.getElementById('myCanvas');
+var ctx= canvas.getContext('2d');
+// 開始繪圖******直線
+// 設定邊框顏色
+ctx.strokeStyle="#ff0066"
+//路徑開始
+ctx.beginPath();
+//起始點移到
+ctx.moveTo(50,50);
+// 終點
+ctx.lineTo(150,50);
+ctx.lineTo(200,100);
+ctx.lineTo(350,100);
+// 繪出邊框
+ctx.stroke();
+}
+function drawCircle(){
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    // 開始繪圖******圓
+    // 線條邊框顏色
+    ctx.strokeStyle="#336600";
+    // 線條寬度
+    ctx.lineWidth=10;
+    // 設定填滿顏色
+    ctx.fileStyle="#FF0000";
+    ctx.beginPath();
+    ctx.arc(100,100,50,0,Math.PI*2,true);
+    ctx.closePath();
+    ctx.fill();
+    //繪出邊框
+    ctx.stroke();
+}
+function drawRect()
+{
+    var canvas= document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    // 開始繪圖*******填滿矩形
+    // 設定填滿顏色
+    ctx.filestyle="#FF0000";
+    // 起始點(200,50)長100寬80的邊框矩形
+    ctx.strokeRect(50,50,100,80) 
+}
+
+function drawStrRect()
+{
+    var canvas= document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    // 設定邊框顏色
+    ctx.strokeStyle="#006633";
+    // 起始點(200,50)長100寬80的邊框矩形
+    ctx.strokeRect(200,50,100,80) 
+}
+
+
+function clearDraw(){
+    var canvas =document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    // 清除圖形
+    ctx.clearRect(0,0,400,200);
+}
+</script>
+
+<style>
+    canvas{border: 1px solid black;}
+</style>
+<body>
+    <input type="button" value="畫線" onclick="drawline();">
+    <input type="button" value="畫圓" onclick="drawCircle();">
+    <input type="button" value="填滿矩形" onclick="drawRect();">
+    <input type="button" value="邊框矩形" onclick="drawStrRect();">
+    <input type="button" value="清除圖形" onclick="clearDraw();">
+    <p>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+</body>
+</html>
