@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ch14_01</title>
+</head>
+<script type="text/javascript">
+function sendok()
+{
+    if(userid.value!="" && userpwd.value!="")
+    {
+        localStorage.userid=userid.value;
+        sessionStroage.userpwd=userpwd.value;
+        return true;
+    }    else{
+                alert("請輸入帳號");
+                return false;
+             }
+}
+  function isload(){
+      if(localStorage.userid)
+      userid.value=localStorage.userid;
+  }
+</script>
+<body onload="isload()">
+    <img src="夏目.jpg"/> 
+    <!-- action是把資料傳送到那裏 -->
+    <!-- onsubmit是間接收到回傳結果為true時，才會將form資料送出 -->
+    <form method="get" action="po2.html" onsubmit="return sendok();">
+    請輸入您的帳號:<br/>
+    <input type="text" id="userid" value="" autofocus>
+    <br/>
+    請輸入您的密碼:</br>
+    <input type="password" id="userpwd" value=""> </form>
+    <br/>
+    <font style = "font-size:12px">
+    (測試帳號:guest 密碼:1234)
+    </font>
+    <br/>
+    <input id="btn_send" type="submit" value="送出">
+    <br/>
+    </form>
+    
+</body>
+</html>
